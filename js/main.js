@@ -14,8 +14,9 @@ const playAnimation = () => {
         buttonExplore.classList.remove('animate-button');
     }, 2000);
 }
-window.onload = function () {
+window.onload(() => {
     body.style.display = 'block';
     playAnimation();
-};
+});
+
 homeLink.addEventListener('click', playAnimation);
