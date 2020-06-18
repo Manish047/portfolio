@@ -15,6 +15,8 @@ const playAnimation = () => {
         buttonExplore.classList.remove('animate-button');
     }, 2000);
 }
-window.onload = playAnimation;
+window.onload(() => {
+    playAnimation();
+});
 
 homeLink.addEventListener('click', playAnimation);
