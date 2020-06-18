@@ -4,6 +4,9 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #about, #articles, #showcase {
@@ -40,7 +43,6 @@
     text-align: center;
     text-shadow: 3px 3px 5px #314052;
     line-height: 4.25rem;
-   
 }
 
 @keyframes fadeinname {
@@ -54,10 +56,9 @@
     }
 }
 
-.animate-name{
+.animate-name {
     animation: fadeinname 2s ease-out forwards;
 }
-
 
 .quote {
     display: block;
@@ -85,7 +86,7 @@
     }
 }
 
-.animate-quote{
+.animate-quote {
     animation: fadeinquote 2s ease-out forwards;
 }
 
@@ -102,10 +103,9 @@
     border: 2px solid #45a29e;
     border-radius: 3px;
     cursor: pointer;
-    
 }
 
-.animate-button{
+.animate-button {
     animation: fadeinbutton 2s ease-out forwards;
 }
 
