@@ -13,6 +13,7 @@ body {
     padding: 0;
     margin: 0;
     min-width: 280px;
+    margin-top: 4.125rem;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -72,7 +73,7 @@ main {
     align-items: center;
     justify-content: space-between;
     height: 4.125rem;
-    padding-right: 16px;
+    padding-right: 8px;
 }
 
 .main-header__nav-brand {
