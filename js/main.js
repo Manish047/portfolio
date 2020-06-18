@@ -1,4 +1,4 @@
-var body = ddocument.getElementsByTagName("body")[0];
+var body = document.getElementsByTagName("body")[0];
 var homeLink = document.getElementById('homeLink');
 var personName = document.querySelector('.person-name');
 var quote = document.querySelector('.quote');
@@ -14,10 +14,7 @@ const playAnimation = () => {
         buttonExplore.classList.remove('animate-button');
     }, 2000);
 }
-console.log(body);
-
 window.onload = function () {
-
     body.style.display = 'block';
     playAnimation();
 };
