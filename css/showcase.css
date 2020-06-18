@@ -6,18 +6,9 @@
     display: none;
 }
 
-#showcase {
-    width: 100%;
-}
-
-#showcase .content {
-    padding: 0;
-    width: 95%;
-}
-
 .showcase-header {
     display: block;
-    font-family: 'Metal Mania';
+    font-family: 'Staatliches', cursive;
     font-size: 2rem;
     text-align: center;
     color: #45a29e;
@@ -32,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
 }
 
 .showcase-container__mobile, .showcase-container__web {
@@ -50,7 +41,10 @@
     height: calc(100vh - 7.125rem);
     background-color: #45a29e;
     border-radius: 16px;
-    max-width: 360px;
+    min-height: 460px;
+    max-height: 750px;
+    min-width: 280;
+    max-width: 320px;
     box-shadow: 5px 5px 5px rgba(69, 162, 158, 0.2);
 }
 
@@ -60,7 +54,10 @@
     margin-bottom: 1.5rem;
     height: calc(100vh - 8.75rem);
     width: 100%;
-    max-width: 360px;
+    min-height: 460px;
+    max-height: 520px;
+    min-width: 280px;
+    max-width: 320px;
     text-align: center;
     border-radius: 16px;
     box-shadow: 5px 5px 10px rgba(69, 162, 158, 0.2);
@@ -98,6 +95,12 @@
     opacity: 0;
 }
 
+@media(min-width: 44.375rem) {
+    #showcase .content {
+        width: 100%;
+    }
+}
+
 @media (min-width:56.25rem) {
     .image-set-2 {
         display: none;
@@ -107,52 +110,64 @@
     }
     .showcase-header {
         padding: 0;
-        padding-top: 1rem;
-        margin: 0;
-    }
-    .showcase-container {
-        width: 100%;
         margin: 0;
     }
     .showcase-container__mobile, .showcase-container__web {
-        min-width: 50%;
-        max-width: 100%;
-        width: 100%;
+        width: 95%;
         flex-direction: row;
         justify-content: space-between;
+        margin: 0;
         padding: 0;
     }
     .showcase-container__mobile {
         height: calc(100vh - 9.125rem);
-        min-height: calc(100vh - 9.125rem);
+        max-height: 800px;
     }
     .showcase-container__web {
+        min-width: 95%;
         margin-top: 4.125rem;
         height: calc(100vh - 7.125rem);
         max-height: 800px;
     }
     .showcase-container__mobile-item {
         border-radius: 16px;
-        margin: 0 0.75rem;
-        max-height: 600px;
+        margin: 0 0.5rem;
+        min-width: 0;
+        max-width: 0;
+        min-height: 0;
+        max-height: 0;
     }
     .showcase-container__mobile-item.main {
         height: 90%;
-        max-height: 600px;
-        width: 40%;
+        width: 20%;
+        min-height: 85%;
+        min-width: auto;
+        max-height: 400px;
+        max-width: 40%;
         order: 0;
     }
     .showcase-container__mobile-item.secondary {
         height: 80%;
-        max-height: 540px;
-        width: 35%;
+        width: 17.5%;
+        min-height: 80%;
+        min-width: auto;
+        max-height: 360px;
+        max-width: 35%;
         order: 0;
     }
     .showcase-container__mobile-item.last {
         height: 70%;
-        max-height: 480px;
-        width: 30%;
+        width: 15%;
+        min-height: 75%;
+        min-width: auto;
+        max-height: 320px;
+        max-width: 30%;
         order: 0;
+    }
+    .showcase-container__mobile-item.main img, .showcase-container__mobile-item.secondary img, .showcase-container__mobile-item.last img {
+        height: 100%;
+        width: 100%;
+        vertical-align: middle;
     }
 }
 

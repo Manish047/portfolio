@@ -1,37 +1,34 @@
-#home {
-    min-height: calc(100vh - 4.125rem);
-    max-width: 1500px;
-    margin: auto;
+#home, #about, #articles, #showcase, #contact {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    max-width: 1500px;
+    width: 100%;
+}
+
+#home {
+    margin-top: 4.125rem;
+    min-height: calc(100vh - 4.125rem);
 }
 
 #about, #articles, #showcase {
     padding-top: 4.125rem;
     min-height: calc(100vh - 4.125rem);
-    max-width: 1500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #contact {
+    padding-top: 4.125rem;
     min-height: calc(100vh - 4.125rem - 3.125rem);
-    max-width: 1500px;
-    display: flex;
-    flex-direction: column;
 }
 
 .content {
+    display: block;
     height: 100%;
     width: 100%;
     margin: auto;
-    overflow: hidden;
 }
 
 .person-name {
@@ -62,12 +59,13 @@
 
 .quote {
     display: block;
-    background-color: #c5c6c7;
+    background-color: rgba(197, 198, 199, 0.5);
     color: #1f2833;
     padding: 2rem;
     text-align: justify;
     font-size: 1.25rem;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
     margin: 1.5rem 2rem;
     border-radius: 8px;
     border: 3px solid #45a29e;

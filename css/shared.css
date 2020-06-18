@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -12,7 +13,6 @@ html {
 body {
     padding: 0;
     margin: 0;
-    min-width: 280px;
     margin-top: 4.125rem;
 }
 
@@ -29,7 +29,6 @@ body {
 }
 
 main {
-    margin-top: 4.125rem;
     min-height: calc(100vh - 4.125rem - 3.125rem);
 }
 
