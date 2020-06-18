@@ -44,7 +44,8 @@
 
 .feedback-form input:focus, .feedback-form textarea:focus {
     outline: none;
-    border: 1px solid #45a29e;
+    border: 2px solid #45a29e;
+    background-color: #cefffb;
 }
 
 @media (min-width: 44.375rem) {
