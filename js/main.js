@@ -15,7 +15,7 @@ const playAnimation = () => {
     }, 2000);
 }
 window.onload(() => {
-    body.style.display = 'block';
+    this.body.style.display = 'block';
     playAnimation();
 });
 
