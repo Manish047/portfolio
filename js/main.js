@@ -14,10 +14,11 @@ const playAnimation = () => {
         buttonExplore.classList.remove('animate-button');
     }, 2000);
 }
-window.onload(() => {
+window.onload = () => {
     var body = document.querySelector('body');
+    console.log(body);
     body.style.display = 'block';
     playAnimation();
-});
+};
 
 homeLink.addEventListener('click', playAnimation);
