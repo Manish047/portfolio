@@ -1,3 +1,4 @@
+var body = ddocument.getElementsByTagName("body")[0];
 var homeLink = document.getElementById('homeLink');
 var personName = document.querySelector('.person-name');
 var quote = document.querySelector('.quote');
