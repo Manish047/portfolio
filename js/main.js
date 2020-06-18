@@ -14,5 +14,8 @@ const playAnimation = () => {
     }, 2000);
 }
 
-window.onload = playAnimation;
+window.onload = () => {
+    body.style.display = 'block';
+    playAnimation();
+};
 homeLink.addEventListener('click', playAnimation);
