@@ -1,0 +1,150 @@
+#home {
+    min-height: calc(100vh - 4.125rem);
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#about, #articles, #showcase {
+    padding-top: 4.125rem;
+    min-height: calc(100vh);
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    min-height: calc(100vh - 4.125rem - 3.125rem);
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.person-name {
+    margin: auto;
+    font-size: 4rem;
+    font-family: 'Pacifico', sans-serif;
+    color: #66fcf1;
+    display: block;
+    text-align: center;
+    text-shadow: 3px 3px 5px #314052;
+    line-height: 4.25rem;
+   
+}
+
+@keyframes fadeinname {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.animate-name{
+    animation: fadeinname 2s ease-out forwards;
+}
+
+
+.quote {
+    display: block;
+    background-color: #c5c6c7;
+    color: #1f2833;
+    padding: 2rem;
+    text-align: justify;
+    font-size: 1.25rem;
+    font-family: 'Pacifico', cursive;
+    margin: 1.5rem 2rem;
+    border-radius: 8px;
+    border: 3px solid #45a29e;
+    box-shadow: 3px 2px 10px rgba(139, 250, 242, 0.5);
+    max-width: 1125px;
+}
+
+@keyframes fadeinquote {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.animate-quote{
+    animation: fadeinquote 2s ease-out forwards;
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: #66fcf1;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #45a29e;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+.animate-button{
+    animation: fadeinbutton 2s ease-out forwards;
+}
+
+@keyframes fadeinbutton {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.button:hover {
+    background-color: #1f2833;
+    color: white;
+}
+
+@media (min-width: 44.375rem) {
+    .person-name {
+        margin: 1.5rem 1.5rem;
+        display: block;
+        text-align: left;
+        font-size: 4.5rem;
+    }
+    .content {
+        width: 80%;
+        padding: 1rem;
+    }
+    .quote {
+        position: relative;
+        left: 10%;
+        width: 90%;
+        margin: 0;
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+    .button {
+        margin-top: 2rem;
+    }
+}

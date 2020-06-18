@@ -1,0 +1,57 @@
+#contact {
+    padding-top: 4.125rem;
+    margin: auto;
+}
+
+.contact-header {
+    display: block;
+    font-size: 1rem;
+    font-family: 'Anton';
+    color: #66fcf1;
+    text-align: center;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.feedback-form {
+    padding: 1rem;
+    min-width: 40%;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.feedback-form .form-control {
+    margin-bottom: 0.25rem;
+}
+
+.feedback-form input, .feedback-form textarea, .feedback-form label {
+    display: inline-block;
+    width: 100%;
+}
+
+.feedback-form label {
+    font-size: 1rem;
+    color: #45a29e;
+    margin-bottom: 0.25rem;
+    font-family: 'Anton';
+}
+
+.feedback-form input, .feedback-form textarea {
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+}
+
+@media (min-width: 44.375rem) {
+    .feedback-form {
+        width: 50%;
+        max-width: 70%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 59.375rem) {
+    .contact-header {
+        font-size: 1.75rem;
+    }
+}
