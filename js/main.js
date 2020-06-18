@@ -14,8 +14,10 @@ const playAnimation = () => {
         buttonExplore.classList.remove('animate-button');
     }, 2000);
 }
+console.log(body);
 
-window.onload = () => {
+window.onload = function () {
+
     body.style.display = 'block';
     playAnimation();
 };
