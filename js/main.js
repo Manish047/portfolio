@@ -1,10 +1,11 @@
-var body = document.querySelector('body');
+var body = document.getElementsByTagName('body')[0];
 var homeLink = document.getElementById('homeLink');
 var personName = document.querySelector('.person-name');
 var quote = document.querySelector('.quote');
 var buttonExplore = document.getElementById('explore');
 
 const playAnimation = () => {
+    console.log(body);
     body.style.display = 'block';
     personName.classList.add('animate-name');
     quote.classList.add('animate-quote');
