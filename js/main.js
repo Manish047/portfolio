@@ -1,4 +1,4 @@
-var body = document.querySelector('body');
+
 var homeLink = document.getElementById('homeLink');
 var personName = document.querySelector('.person-name');
 var quote = document.querySelector('.quote');
@@ -15,6 +15,7 @@ const playAnimation = () => {
     }, 2000);
 }
 window.onload(() => {
+    var body = document.querySelector('body');
     body.style.display = 'block';
     playAnimation();
 });
